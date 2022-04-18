@@ -8,11 +8,11 @@ export const GAS_PRICE = 225
 
 export const ROUTER_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.FUJI]: '0x2D99ABD9008Dc933ff5c0CD271B88309593aB921',
-  [ChainId.AVALANCHE]: '0xE54Ca86531e17Ef3616d22Ca28b0D458b6C89106',
+  [ChainId.POLYGON]: '0x4704dBc771FC9c62c2AE99760090533c7a526D6B',
   [ChainId.WAGMI]: '0x2F99E88888ee24cbf1623FB7af7FD2e508123eb3'
 }
 
-export const LANDING_PAGE = 'https://pangolin.exchange'
+export const LANDING_PAGE = 'https://tundraswap.com'
 export const ANALYTICS_PAGE = 'https://info.pangolin.exchange'
 
 export const PANGOLIN_API_BASE_URL = `https://api.pangolin.exchange`
@@ -31,7 +31,7 @@ export const BRIDGE_MIGRATOR_ADDRESS = '0x4b23Aa72A1214d0E4fd3f2c8Da7C6ba660F748
 
 export const MINICHEF_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.FUJI]: ZERO_ADDRESS,
-  [ChainId.AVALANCHE]: '0x1f806f7C8dED893fd3caE279191ad7Aa3798E928',
+  [ChainId.POLYGON]: '0x7EB91dD44e25b175AD4a1F4bdaD2205D81617750',
   [ChainId.WAGMI]: '0x08B7fAC01886858CE741bfA7573D281F05730bF1'
 }
 
@@ -44,28 +44,28 @@ type ChainTokenList = {
 
 export const AIRDROP_ADDRESS: { [chainId in ChainId]?: string } = {
   [ChainId.FUJI]: ZERO_ADDRESS,
-  [ChainId.AVALANCHE]: '0x0C58C2041da4CfCcF5818Bbe3b66DBC23B3902d9',
+  [ChainId.POLYGON]: '0x9214bff683c96ecfbF69b592ca9aC6CeFA62fa8D', // changed to Polygon HOL
   [ChainId.WAGMI]: '0xFf3A1Fbc721C9c1E92835b551e9A795FCdBa83e8'
 }
 
 const WAVAX_AND_PNG_ONLY: ChainTokenList = {
   [ChainId.FUJI]: [WAVAX[ChainId.FUJI], PNG[ChainId.FUJI]],
-  [ChainId.AVALANCHE]: [WAVAX[ChainId.AVALANCHE], PNG[ChainId.AVALANCHE]],
+  [ChainId.POLYGON]: [WAVAX[ChainId.POLYGON], PNG[ChainId.POLYGON]],
   [ChainId.WAGMI]: [WAVAX[ChainId.WAGMI], PNG[ChainId.WAGMI]]
 }
 
 // used to construct intermediary pairs for trading
 export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   [ChainId.FUJI]: [WAVAX[ChainId.FUJI], PNG[ChainId.FUJI]],
-  [ChainId.AVALANCHE]: [
-    WAVAX[ChainId.AVALANCHE],
-    PNG[ChainId.AVALANCHE],
-    USDTe[ChainId.AVALANCHE],
-    DAIe[ChainId.AVALANCHE],
-    USDCe[ChainId.AVALANCHE],
-    UST[ChainId.AVALANCHE],
-    axlUST[ChainId.AVALANCHE],
-    USDC[ChainId.AVALANCHE]
+  [ChainId.POLYGON]: [
+    WAVAX[ChainId.POLYGON],
+    PNG[ChainId.POLYGON],
+    USDTe[ChainId.POLYGON],
+    DAIe[ChainId.POLYGON],
+    USDCe[ChainId.POLYGON],
+    UST[ChainId.POLYGON],
+    axlUST[ChainId.POLYGON],
+    USDC[ChainId.POLYGON]
   ],
   [ChainId.WAGMI]: [WAVAX[ChainId.WAGMI], PNG[ChainId.WAGMI]]
 }
@@ -75,7 +75,7 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
  * tokens.
  */
 export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: Token[] } } = {
-  [ChainId.AVALANCHE]: {}
+  [ChainId.POLYGON]: {}
 }
 
 // used for display in the default list when adding liquidity
@@ -89,20 +89,20 @@ export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
 }
 
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
-  [ChainId.AVALANCHE]: []
+  [ChainId.POLYGON]: []
 }
 
 // these tokens can be directly linked to (via url params) in the swap page without prompting a warning
 export const TRUSTED_TOKEN_ADDRESSES: { readonly [chainId in ChainId]: string[] } = {
   [ChainId.FUJI]: [],
-  [ChainId.AVALANCHE]: [WAVAX[ChainId.AVALANCHE].address, PNG[ChainId.AVALANCHE].address],
+  [ChainId.POLYGON]: [WAVAX[ChainId.POLYGON].address, PNG[ChainId.POLYGON].address],
   [ChainId.WAGMI]: [WAVAX[ChainId.WAGMI].address, PNG[ChainId.WAGMI].address]
 }
 
 export const SWAP_DEFAULT_CURRENCY = {
-  [ChainId.AVALANCHE]: {
-    inputCurrency: 'AVAX',
-    outputCurrency: axlUST[ChainId.AVALANCHE].address
+  [ChainId.POLYGON]: {
+    inputCurrency: 'MATIC',
+    outputCurrency: axlUST[ChainId.POLYGON].address
   },
   [ChainId.FUJI]: {
     inputCurrency: '',
@@ -180,16 +180,16 @@ export const SUPPORTED_WALLETS: { [key: string]: WalletInfo } = {
 
 export const NetworkContextName = 'NETWORK'
 
-export const AVALANCHE_CHAIN_PARAMS = {
-  chainId: '0xa86a', // A 0x-prefixed hexadecimal chainId
-  chainName: 'Avalanche Mainnet C-Chain',
+export const POLYGON_CHAIN_PARAMS = {
+  chainId: '0x89', // A 0x-prefixed hexadecimal chainId
+  chainName: 'Polygon Mainnet',
   nativeCurrency: {
-    name: 'Avalanche',
-    symbol: 'AVAX',
+    name: 'Polygon',
+    symbol: 'MATIC',
     decimals: 18
   },
-  rpcUrls: ['https://api.avax.network/ext/bc/C/rpc'],
-  blockExplorerUrls: ['https://snowtrace.io//']
+  rpcUrls: ['https://polygon-rpc.com/'],
+  blockExplorerUrls: ['https://polygonscan.com//']
 }
 
 // default allowed slippage, in bips

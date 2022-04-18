@@ -72,7 +72,7 @@ export default function PngBalanceContent({ setShowPngBalanceModal }: { setShowP
   const totalSupply: TokenAmount | undefined = useTotalSupply(png)
 
   // Determine PNG price in AVAX
-  const wavax = WAVAX[chainId ? chainId : 43114]
+  const wavax = WAVAX[chainId ? chainId : 137]
   const [, avaxPngTokenPair] = usePair(wavax, png)
   const oneToken = JSBI.BigInt(1000000000000000000)
   const { t } = useTranslation()
@@ -172,7 +172,7 @@ export default function PngBalanceContent({ setShowPngBalanceModal }: { setShowP
                                 address: png?.address,
                                 symbol: png?.symbol,
                                 decimals: png?.decimals,
-                                image: getTokenLogoURL(PNG[ChainId.AVALANCHE].address, 48)
+                                image: getTokenLogoURL(PNG[ChainId.POLYGON].address, 48)
                               }
                             }
                           })

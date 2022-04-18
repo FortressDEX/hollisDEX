@@ -1,5 +1,6 @@
 import {
   PNG,
+  CNDL,
   ETH,
   WETHe,
   USDT,
@@ -100,6 +101,7 @@ import { WAVAX } from '@pangolindex/sdk'
 
 export const COIN_LISTS = [
   WAVAX,
+  CNDL,
   PNG,
   ETH,
   WETHe,

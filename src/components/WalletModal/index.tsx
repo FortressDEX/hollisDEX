@@ -10,7 +10,7 @@ import MetamaskIcon from '../../assets/images/metamask.png'
 import XDefiIcon from '../../assets/images/xDefi.png'
 import { ReactComponent as Close } from '../../assets/images/x.svg'
 import { gnosisSafe, injected, xDefi } from '../../connectors'
-import { LANDING_PAGE, SUPPORTED_WALLETS, AVALANCHE_CHAIN_PARAMS, IS_IN_IFRAME } from '../../constants'
+import { LANDING_PAGE, SUPPORTED_WALLETS, POLYGON_CHAIN_PARAMS, IS_IN_IFRAME } from '../../constants'
 import usePrevious from '../../hooks/usePrevious'
 import { ApplicationModal } from '../../state/application/actions'
 import { useModalOpen, useWalletModalToggle } from '../../state/application/hooks'
@@ -128,7 +128,7 @@ function addAvalancheNetwork() {
     provider
       ?.request({
         method: 'wallet_addEthereumChain',
-        params: [AVALANCHE_CHAIN_PARAMS]
+        params: [POLYGON_CHAIN_PARAMS]
       })
       .catch((error: any) => {
         console.log(error)
