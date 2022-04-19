@@ -14,7 +14,7 @@ import { Hidden, Visible } from 'src/theme'
 
 const Dashboard = () => {
   const { t } = useTranslation()
-  const { chainId = ChainId.AVALANCHE } = useActiveWeb3React()
+  const { chainId = ChainId.POLYGON } = useActiveWeb3React()
 
   return (
     <PageWrapper>

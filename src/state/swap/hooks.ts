@@ -103,8 +103,8 @@ export function tryParseAmount(chainId: ChainId, value?: string, currency?: Curr
 }
 
 const BAD_RECIPIENT_ADDRESSES: string[] = [
-  FACTORY_ADDRESS[ChainId.AVALANCHE], // v2 factory
-  ROUTER_ADDRESS[ChainId.AVALANCHE] // v2 router 02
+  FACTORY_ADDRESS[ChainId.POLYGON], // v2 factory
+  ROUTER_ADDRESS[ChainId.POLYGON] // v2 router 02
 ]
 
 /**

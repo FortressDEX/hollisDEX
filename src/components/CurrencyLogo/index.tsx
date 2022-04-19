@@ -49,7 +49,7 @@ export default function CurrencyLogo({
     return []
   }, [chainId, currency, uriLocations, imageSize])
 
-  if (chainId && currency === CAVAX[ChainId.AVALANCHE]) {
+  if (chainId && currency === CAVAX[ChainId.POLYGON]) {
     return <StyledEthereumLogo src={AvaxLogo} size={`${size}px`} style={style} />
   } else if (chainId && currency === CAVAX[ChainId.FUJI]) {
     return <StyledEthereumLogo src={AvaxLogo} size={`${size}px`} style={style} />

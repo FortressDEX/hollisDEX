@@ -123,7 +123,7 @@ const WALLET_VIEWS = {
   PENDING: 'pending'
 }
 
-function addAvalancheNetwork() {
+function addPolygonNetwork() {
   injected.getProvider().then(provider => {
     provider
       ?.request({
@@ -226,7 +226,7 @@ export default function WalletModal({
             const isWalletlink = !!window?.WalletLinkProvider || !!window?.walletLinkExtension
             const isCbWallet = isCbWalletDappBrowser || isWalletlink
             if (isCbWallet) {
-              addAvalancheNetwork()
+              addPolygonNetwork()
             }
           })
           .catch(error => {
@@ -378,9 +378,9 @@ export default function WalletModal({
           <ContentWrapper>
             {error instanceof UnsupportedChainIdError ? (
               <>
-                <h5>{t('walletModal.pleaseConnectAvalanche')}</h5>
+                <h5>{t('walletModal.pleaseConnectPolygon')}</h5>
                 {isMetamaskOrCbWallet && (
-                  <ButtonLight onClick={addAvalancheNetwork}>{t('walletModal.switchAvalanche')}</ButtonLight>
+                  <ButtonLight onClick={addPolygonNetwork}>{t('walletModal.switchPolygon')}</ButtonLight>
                 )}
               </>
             ) : (
@@ -435,7 +435,7 @@ export default function WalletModal({
           )}
           {walletView !== WALLET_VIEWS.PENDING && (
             <Blurb>
-              <span>{t('walletModal.newToAvalanche')} &nbsp;</span>{' '}
+              <span>{t('walletModal.newToPolygon')} &nbsp;</span>{' '}
               <ExternalLink href={WALLET_TUTORIAL}>{t('walletModal.learnMoreWallet')}</ExternalLink>
             </Blurb>
           )}

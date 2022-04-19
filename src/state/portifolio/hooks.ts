@@ -90,7 +90,7 @@ export function useGetChainBalance() {
     if (account && chainId) {
       let id = chainId
       if (id === ChainId.FUJI || id === ChainId.WAGMI) {
-        id = ChainId.AVALANCHE
+        id = ChainId.POLYGON
       }
 
       const chain = CHAINS[id]
@@ -175,7 +175,7 @@ export function useGetWalletChainTokens() {
     if (account && chainId) {
       let id = chainId
       if (id === ChainId.FUJI) {
-        id = ChainId.AVALANCHE
+        id = ChainId.POLYGON
       }
       const chain = CHAINS[id]
 
@@ -204,7 +204,7 @@ export function useGetWalletChainTokens() {
         )
       })
 
-      if (chainId === ChainId.AVALANCHE) {
+      if (chainId === ChainId.POLYGON) {
         const pairs = await getPangolinPairs()
         const tokens = [...requestTokens, ...pairs]
         return tokens

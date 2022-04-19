@@ -2529,7 +2529,7 @@ __metadata:
     "@gelatonetwork/limit-orders-react": ^2.4.0
     "@gnosis.pm/safe-apps-web3-react": ^0.6.7
     "@hollis/exchange-contracts": 2.5.0
-    "@hollis/sdk": 2.3.0
+    "@hollis/sdk": ^2.4.0
     "@metamask/jazzicon": ^2.0.0
     "@pangolindex/components": 2.0.4
     "@pangolindex/governance": 1.2.0
@@ -2643,7 +2643,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@hollis/sdk@npm:2.3.0, @hollis/sdk@npm:^2.2.0":
+"@hollis/sdk@npm:^2.2.0":
   version: 2.3.0
   resolution: "@hollis/sdk@npm:2.3.0"
   dependencies:
@@ -2661,6 +2661,27 @@ __metadata:
     "@ethersproject/providers": ^5.0.0-beta
     "@ethersproject/solidity": ^5.0.0-beta
   checksum: e1221298934eafb513597e8ae7aa74f46c8941361e1508a5573e52b0ff9208659d3d8a0c781daab03dafb569be25c8407b06b990f708bf09b6ffcdf750f7e511
+  languageName: node
+  linkType: hard
+
+"@hollis/sdk@npm:^2.4.0":
+  version: 2.4.0
+  resolution: "@hollis/sdk@npm:2.4.0"
+  dependencies:
+    "@hollis/exchange-contracts": ^2.5.0
+    big.js: ^5.2.2
+    decimal.js-light: ^2.5.0
+    jsbi: ^3.1.1
+    tiny-invariant: ^1.1.0
+    tiny-warning: ^1.0.3
+    toformat: ^2.0.0
+  peerDependencies:
+    "@ethersproject/address": ^5.0.0-beta
+    "@ethersproject/contracts": ^5.0.0-beta
+    "@ethersproject/networks": ^5.0.0-beta
+    "@ethersproject/providers": ^5.0.0-beta
+    "@ethersproject/solidity": ^5.0.0-beta
+  checksum: 5695bae37c9fc5f99931dbe757a2bdbd6ee2f8994d7536bfba96d2f262afdd7291009115c88b371c73bb5f2e0ab8c6b170b7b95f7a2133d42c642dce8cde7ed2
   languageName: node
   linkType: hard
 

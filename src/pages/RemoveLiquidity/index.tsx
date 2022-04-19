@@ -356,13 +356,13 @@ export default function RemoveLiquidity({
 
   const NETWORK_CURRENCY: { [chainId in ChainId]?: string } = {
     [ChainId.FUJI]: 'AVAX',
-    [ChainId.AVALANCHE]: 'AVAX',
+    [ChainId.POLYGON]: 'MATIC',
     [ChainId.WAGMI]: 'WGM'
   }
 
   const NETWORK_WRAPPED_CURRENCY: { [chainId in ChainId]?: string } = {
     [ChainId.FUJI]: 'WAVAX',
-    [ChainId.AVALANCHE]: 'WAVAX',
+    [ChainId.POLYGON]: 'WMATIC',
     [ChainId.WAGMI]: 'wWAGMI'
   }
 

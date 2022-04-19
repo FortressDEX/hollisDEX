@@ -24,7 +24,7 @@ type Props = {
 }
 
 const WatchList: React.FC<Props> = ({ isLimitOrders }) => {
-  const { chainId = ChainId.AVALANCHE } = useActiveWeb3React()
+  const { chainId = ChainId.POLYGON } = useActiveWeb3React()
   const { t } = useTranslation()
   const [showMore, setShowMore] = useState(false as boolean)
   const allTokens = useAllTokens()

@@ -109,5 +109,5 @@ export function useInactiveListener(suppress = false) {
 
 export const useChainId = () => {
   const { chainId } = useActiveWeb3React()
-  return chainId || ChainId.AVALANCHE
+  return chainId || ChainId.POLYGON
 }

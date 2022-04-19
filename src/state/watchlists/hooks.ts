@@ -6,7 +6,7 @@ import { useAllTokens } from 'src/hooks/Tokens'
 import { PNG } from 'src/constants/tokens'
 
 export function useSelectedCurrencyLists(): Token[] | undefined {
-  const { chainId = ChainId.AVALANCHE } = useActiveWeb3React()
+  const { chainId = ChainId.POLYGON } = useActiveWeb3React()
   const allTokens = useAllTokens()
   const coins = Object.values(allTokens || {})
 
@@ -28,7 +28,7 @@ export function useSelectedCurrencyLists(): Token[] | undefined {
 }
 
 export function useIsSelectedCurrency(address: string): boolean {
-  const { chainId = ChainId.AVALANCHE } = useActiveWeb3React()
+  const { chainId = ChainId.POLYGON } = useActiveWeb3React()
 
   let addresses = useSelector<AppState, AppState['watchlists']['currencies']>(state =>
     ([] as string[]).concat(state?.watchlists?.currencies || [])

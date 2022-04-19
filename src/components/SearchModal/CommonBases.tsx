@@ -57,7 +57,7 @@ export default function CommonBases({
             <CurrencyLogo currency={chainId && CAVAX[chainId]} style={{ marginRight: 8 }} chainId={chainId} />
           )}
           <Text fontWeight={500} fontSize={16}>
-            AVAX
+            MATIC
           </Text>
         </BaseWrapper>
         {(chainId ? SUGGESTED_BASES[chainId] : []).map((token: Token) => {

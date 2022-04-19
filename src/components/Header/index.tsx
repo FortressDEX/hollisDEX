@@ -282,13 +282,13 @@ const NarrowMenuFlyout = styled(MenuFlyout)`
 
 const NETWORK_LABELS: { [chainId in ChainId]?: string } = {
   [ChainId.FUJI]: 'Fuji',
-  [ChainId.AVALANCHE]: 'Avalanche',
+  [ChainId.POLYGON]: 'Polygon',
   [ChainId.WAGMI]: 'Wagmi'
 }
 
 const NETWORK_CURRENCY: { [chainId in ChainId]?: string } = {
   [ChainId.FUJI]: 'AVAX',
-  [ChainId.AVALANCHE]: 'AVAX',
+  [ChainId.POLYGON]: 'MATIC',
   [ChainId.WAGMI]: 'WGM'
 }
 

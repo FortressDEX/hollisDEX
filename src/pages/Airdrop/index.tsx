@@ -74,10 +74,10 @@ export default function Vote() {
 
   const claimAmount = useUserUnclaimedAmount(account)
 
-  const uniAmount = useTokenBalance(account ? account : undefined, chainId ? UNI[chainId] : UNI[ChainId.AVALANCHE])
+  const uniAmount = useTokenBalance(account ? account : undefined, chainId ? UNI[chainId] : UNI[ChainId.POLYGON])
   const sushiAmount = useTokenBalance(
     account ? account : undefined,
-    chainId ? SUSHI[chainId] : SUSHI[ChainId.AVALANCHE]
+    chainId ? SUSHI[chainId] : SUSHI[ChainId.POLYGON]
   )
 
   const hasUni = uniAmount?.greaterThan(JSBI.BigInt(1)) || uniAmount?.equalTo(JSBI.BigInt(1))

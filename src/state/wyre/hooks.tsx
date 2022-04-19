@@ -25,8 +25,8 @@ export function useQuoteRequest(account: string | null | undefined, amount: stri
       const data = {
         amount: amount,
         sourceCurrency: sourceCurrency,
-        destCurrency: 'AVAX',
-        dest: 'avalanche:' + account.toLowerCase(),
+        destCurrency: 'MATIC',
+        dest: 'polygon:' + account.toLowerCase(),
         accountId: WYRE_ID,
         country: getCountry()
       }

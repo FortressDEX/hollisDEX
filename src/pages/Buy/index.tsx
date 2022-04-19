@@ -62,7 +62,7 @@ export default function Buy() {
       ...data,
       amount: amount,
       sourceCurrency: fiat.symbol,
-      dest: `avalanche:${account?.toLowerCase()}`
+      dest: `polygon:${account?.toLowerCase()}`
     }
     redirectToWyre(formDataWithAmount).then(success => {
       setFormError(!success)
@@ -130,7 +130,7 @@ export default function Buy() {
               </TYPE.error>
             ) : null}
             <ButtonPrimary type="submit" style={{ margin: '20px 0 0 0' }} disabled={!ableToBuy}>
-              {t('buyPage.buyAvax')}
+              {t('buyPage.buyMatic')}
             </ButtonPrimary>
           </PurchaseForm>
         </Wrapper>

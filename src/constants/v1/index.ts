@@ -6,7 +6,7 @@ import V1_FACTORY_ABI from './v1_factory.json'
 
 const V1_FACTORY_ADDRESSES: { [chainId in ChainId]: string } = {
   [ChainId.FUJI]: ZERO_ADDRESS,
-  [ChainId.AVALANCHE]: ZERO_ADDRESS,
+  [ChainId.POLYGON]: ZERO_ADDRESS,
   [ChainId.WAGMI]: ZERO_ADDRESS
 }
 

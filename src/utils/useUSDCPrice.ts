@@ -21,8 +21,8 @@ export default function useUSDCPrice(currency?: Currency): Price | undefined {
         chainId && wrapped && currencyEquals(WAVAX[chainId], wrapped) ? undefined : currency,
         chainId ? WAVAX[chainId] : undefined
       ],
-      [wrapped?.equals(USDC) ? undefined : wrapped, chainId === ChainId.AVALANCHE ? USDC : undefined],
-      [chainId ? WAVAX[chainId] : undefined, chainId === ChainId.AVALANCHE ? USDC : undefined]
+      [wrapped?.equals(USDC) ? undefined : wrapped, chainId === ChainId.POLYGON ? USDC : undefined],
+      [chainId ? WAVAX[chainId] : undefined, chainId === ChainId.POLYGON ? USDC : undefined]
     ],
     [chainId, currency, wrapped, USDC]
   )

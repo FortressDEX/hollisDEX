@@ -39,13 +39,13 @@ export default function useWrapCallback(
 
   const NETWORK_CURRENCY: { [chainId in ChainId]?: string } = {
     [ChainId.FUJI]: 'AVAX',
-    [ChainId.AVALANCHE]: 'AVAX',
+    [ChainId.POLYGON]: 'AVAX',
     [ChainId.WAGMI]: 'WGM'
   }
 
   const NETWORK_WRAPPED_CURRENCY: { [chainId in ChainId]?: string } = {
     [ChainId.FUJI]: 'WAVAX',
-    [ChainId.AVALANCHE]: 'WAVAX',
+    [ChainId.POLYGON]: 'WAVAX',
     [ChainId.WAGMI]: 'wWAGMI'
   }
 

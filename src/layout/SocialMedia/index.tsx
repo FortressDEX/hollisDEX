@@ -19,12 +19,12 @@ export default function SocialMedia({ collapsed }: SocialMediaProps) {
 
   const socialLinks = [
     {
-      link: 'https://twitter.com/pangolindex',
+      link: 'https://twitter.com/hollisdex',
       icon: Twitter,
       title: 'Twitter'
     },
     {
-      link: 'https://t.me/pangolindexV2',
+      link: 'https://t.me/hollisdex',
       icon: Telegram,
       title: 'Telegram'
     },
@@ -39,12 +39,12 @@ export default function SocialMedia({ collapsed }: SocialMediaProps) {
       title: 'Medium'
     },
     {
-      link: 'https://github.com/pangolindex',
+      link: 'https://github.com/fortressdex',
       icon: Github,
       title: 'Github'
     },
     {
-      link: 'https://discord.gg/pangolindex',
+      link: 'https://discord.gg/hollisdex',
       icon: Discord,
       title: 'Discord'
     },

@@ -431,7 +431,7 @@ export function useSingleSideStakingInfo(
     [chainId, rewardTokenToFilterBy, version]
   )
 
-  const png = PNG[ChainId.AVALANCHE]
+  const png = PNG[ChainId.POLYGON]
 
   const rewardsAddresses = useMemo(() => info.map(({ stakingRewardAddress }) => stakingRewardAddress), [info])
   const routes = useMemo(
@@ -949,20 +949,20 @@ export const useMinichefStakingInfos = (version = 2, pairToFilterBy?: Pair | nul
 
         const tokens = [token0, token1].sort(({ address: addressA }, { address: addressB }) => {
           // Sort AVAX last
-          if (addressA === WAVAX[ChainId.AVALANCHE].address) return 1
-          else if (addressB === WAVAX[ChainId.AVALANCHE].address) return -1
+          if (addressA === WAVAX[ChainId.POLYGON].address) return 1
+          else if (addressB === WAVAX[ChainId.POLYGON].address) return -1
           // Sort PNG first
-          else if (addressA === PNG[ChainId.AVALANCHE].address) return -1
-          else if (addressB === PNG[ChainId.AVALANCHE].address) return 1
+          else if (addressA === PNG[ChainId.POLYGON].address) return -1
+          else if (addressB === PNG[ChainId.POLYGON].address) return 1
           // Sort axlUST first
-          else if (addressA === axlUST[ChainId.AVALANCHE].address) return -1
-          else if (addressB === axlUST[ChainId.AVALANCHE].address) return 1
+          else if (addressA === axlUST[ChainId.POLYGON].address) return -1
+          else if (addressB === axlUST[ChainId.POLYGON].address) return 1
           // Sort USDC first
-          else if (addressA === USDC[ChainId.AVALANCHE].address) return -1
-          else if (addressB === USDC[ChainId.AVALANCHE].address) return 1
+          else if (addressA === USDC[ChainId.POLYGON].address) return -1
+          else if (addressB === USDC[ChainId.POLYGON].address) return 1
           // Sort USDCe first
-          else if (addressA === USDCe[ChainId.AVALANCHE].address) return -1
-          else if (addressB === USDCe[ChainId.AVALANCHE].address) return 1
+          else if (addressA === USDCe[ChainId.POLYGON].address) return -1
+          else if (addressB === USDCe[ChainId.POLYGON].address) return 1
           else return 0
         })
 

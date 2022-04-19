@@ -13,7 +13,7 @@ export enum ChainsId {
   ETH = 1,
   BSC = 56,
   XDAI = 100,
-  MATIC = 137,
+  POLYGON = 137, //should be MATIC lol // Changed "MATIC" to "POLYGON"
   FTM = 250,
   OKT = 66,
   HECO = 128,
@@ -83,14 +83,15 @@ export const CHAINS = {
     coingecko_id: 'xdai',
     airdrop_active: false
   },
-  [ChainsId.MATIC]: {
+  [ChainsId.POLYGON]: { // Changed "MATIC" to "POLYGON" -S.W.S.
     name: 'Polygon',
     symbol: 'MATIC',
     logo: 'https://static.debank.com/image/chain/logo_url/matic/d3d807aff1a13e9ba51a14ff153d6807.png',
     tracked_by_debank: true,
     supported_by_gelato: true,
     coingecko_id: 'polygon-pos',
-    airdrop_active: false
+    is_mainnet: true, // Added "is_mainnet: true," - S.W.S.
+    airdrop_active: true
   },
   [ChainsId.FTM]: {
     name: 'Fantom',

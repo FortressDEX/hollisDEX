@@ -34,7 +34,7 @@ export default function Footer() {
       <Box display="flex" justifyContent="center">
         <Text color="text1">Powered by</Text>
         <Text color="mustardYellow" marginLeft="5px">
-          Pangolin DAO
+          Hollis DAO
         </Text>
       </Box>
     </FooterFrame>
