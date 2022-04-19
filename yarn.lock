@@ -1914,6 +1914,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@ethersproject/abi@npm:^5.1.2":
+  version: 5.6.1
+  resolution: "@ethersproject/abi@npm:5.6.1"
+  dependencies:
+    "@ethersproject/address": ^5.6.0
+    "@ethersproject/bignumber": ^5.6.0
+    "@ethersproject/bytes": ^5.6.0
+    "@ethersproject/constants": ^5.6.0
+    "@ethersproject/hash": ^5.6.0
+    "@ethersproject/keccak256": ^5.6.0
+    "@ethersproject/logger": ^5.6.0
+    "@ethersproject/properties": ^5.6.0
+    "@ethersproject/strings": ^5.6.0
+  checksum: 0545a874dc5bfe2fec63e472d269f9c6b22b8f9ea77f4c23b93d36a8652152171f1ae2681dc64ec8d46b69506967a5e99c8156dc1f74346eea48cb6b64a1fdc9
+  languageName: node
+  linkType: hard
+
 "@ethersproject/abstract-provider@npm:5.6.0, @ethersproject/abstract-provider@npm:^5.6.0":
   version: 5.6.0
   resolution: "@ethersproject/abstract-provider@npm:5.6.0"
@@ -2398,6 +2415,32 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@gnosis.pm/safe-core-sdk-types@npm:^0.1.1":
+  version: 0.1.1
+  resolution: "@gnosis.pm/safe-core-sdk-types@npm:0.1.1"
+  checksum: f0f258044ca1de7eccf4d5430664523111afbafef9cdd0e0aa23eb685f31fd37b2e4e3fa207be6d323c0b6e2f7bb9371d51bf0f156328a6de5c9080296cc857d
+  languageName: node
+  linkType: hard
+
+"@gnosis.pm/safe-core-sdk@npm:^1.3.0":
+  version: 1.3.0
+  resolution: "@gnosis.pm/safe-core-sdk@npm:1.3.0"
+  dependencies:
+    "@gnosis.pm/safe-core-sdk-types": ^0.1.1
+    "@gnosis.pm/safe-deployments": ^1.7.0
+    ethereumjs-util: ^7.1.3
+    semver: ^7.3.5
+  checksum: c7aa8dd6b2d624ca583f576074490961ca10c996e60b1a3a686d83cca5e36677c1e51e0e2d0fb0bf8a56230ee9c70cd3ed96836b48247b7e12208fcb7a4f35a2
+  languageName: node
+  linkType: hard
+
+"@gnosis.pm/safe-deployments@npm:^1.7.0":
+  version: 1.12.0
+  resolution: "@gnosis.pm/safe-deployments@npm:1.12.0"
+  checksum: b2b7d3a9b80a6432141ba8f344c690731d53b6f7309ce96bfea799f740df734a0f4bed48529bcdb1cb66e88529f56674264d1f9fbc91e1a52ef9dbdf85628157
+  languageName: node
+  linkType: hard
+
 "@gnosis.pm/safe-react-gateway-sdk@npm:^2.5.6":
   version: 2.10.1
   resolution: "@gnosis.pm/safe-react-gateway-sdk@npm:2.10.1"
@@ -2462,6 +2505,162 @@ __metadata:
   dependencies:
     "@hapi/hoek": ^9.0.0
   checksum: 604dfd5dde76d5c334bd03f9001fce69c7ce529883acf92da96f4fe7e51221bf5e5110e964caca287a6a616ba027c071748ab636ff178ad750547fba611d6014
+  languageName: node
+  linkType: hard
+
+"@hollis/exchange-contracts@npm:2.5.0, @hollis/exchange-contracts@npm:^2.5.0":
+  version: 2.5.0
+  resolution: "@hollis/exchange-contracts@npm:2.5.0"
+  dependencies:
+    "@gnosis.pm/safe-core-sdk": ^1.3.0
+    "@hollis/sdk": ^2.2.0
+    "@nomiclabs/hardhat-etherscan": ^3.0.0
+    chance: ^1.1.8
+    dotenv: ^14.2.0
+  checksum: 057a9e5a5e5683fd5cd657ccdbc400fd3550f35c8ad8ef8e0119aef5e999835cd0eda5506455938ae65dfebe6156b75af8e0c793ffd20547305f0bbce142f833
+  languageName: node
+  linkType: hard
+
+"@hollis/interface@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@hollis/interface@workspace:."
+  dependencies:
+    "@ethersproject/experimental": ^5.0.1
+    "@gelatonetwork/limit-orders-react": ^2.4.0
+    "@gnosis.pm/safe-apps-web3-react": ^0.6.7
+    "@hollis/exchange-contracts": 2.5.0
+    "@hollis/sdk": 2.3.0
+    "@metamask/jazzicon": ^2.0.0
+    "@pangolindex/components": 2.0.4
+    "@pangolindex/governance": 1.2.0
+    "@pangolindex/token-lists": ^1.0.1
+    "@pangolindex/web3-react-injected-connector": ^1.0.0
+    "@popperjs/core": ^2.4.4
+    "@reach/dialog": ^0.10.3
+    "@reach/portal": ^0.10.3
+    "@reduxjs/toolkit": ^1.7.2
+    "@sentry/react": ^6.17.4
+    "@sentry/tracing": ^6.17.4
+    "@types/crypto-js": ^4.0.2
+    "@types/jest": ^25.2.1
+    "@types/lodash.flatmap": ^4.5.6
+    "@types/luxon": ^1.24.4
+    "@types/multicodec": ^1.0.0
+    "@types/node": ^13.13.5
+    "@types/numeral": ^2.0.2
+    "@types/qs": ^6.9.2
+    "@types/react": ^16.9.34
+    "@types/react-custom-scrollbars": ^4.0.9
+    "@types/react-dom": ^16.9.7
+    "@types/react-html-parser": ^2.0.2
+    "@types/react-portal": ^4.0.4
+    "@types/react-redux": ^7.1.8
+    "@types/react-router-dom": ^5.0.0
+    "@types/react-slick": ^0.23.7
+    "@types/react-virtualized-auto-sizer": ^1.0.0
+    "@types/react-window": ^1.8.2
+    "@types/rebass": ^4.0.5
+    "@types/styled-components": ^5.1.0
+    "@types/testing-library__cypress": ^5.0.5
+    "@types/wcag-contrast": ^3.0.0
+    "@typescript-eslint/eslint-plugin": ^2.31.0
+    "@typescript-eslint/parser": ^2.31.0
+    "@web3-react/core": 6.0.9
+    "@web3-react/fortmatic-connector": ^6.0.9
+    "@web3-react/portis-connector": 6.0.9
+    "@web3-react/walletconnect-connector": 6.1.1
+    "@web3-react/walletlink-connector": 6.2.11
+    ajv: ^6.12.3
+    apollo-cache-inmemory: ^1.6.6
+    apollo-client: ^2.6.10
+    apollo-link-http: ^1.5.17
+    axios: ^0.26.0
+    babel-plugin-styled-components: ^2.0.2
+    cids: ^1.0.0
+    copy-to-clipboard: ^3.2.0
+    cross-env: ^7.0.2
+    crypto-js: ^4.0.0
+    cypress: ^4.11.0
+    dayjs: ^1.10.7
+    eslint: ^6.8.0
+    eslint-config-prettier: ^6.11.0
+    eslint-plugin-prettier: ^3.1.3
+    eslint-plugin-react: ^7.19.0
+    eslint-plugin-react-hooks: ^4.0.0
+    ethereum-blockies-base64: ^1.0.2
+    ethers: ^5.0.7
+    graphql: ^15.5.0
+    graphql-tag: ^2.11.0
+    husky: ^7.0.0
+    i18next: ^20.3.4
+    i18next-browser-languagedetector: ^3.0.1
+    i18next-xhr-backend: ^2.0.1
+    inter-ui: ^3.13.1
+    lightweight-charts: ^3.7.0
+    lint-staged: ^12.3.4
+    lodash.flatmap: ^4.5.0
+    luxon: ^1.25.0
+    multicodec: ^2.0.0
+    multihashes: ^3.0.1
+    node-vibrant: ^3.1.5
+    numeral: ^2.0.6
+    polished: ^3.3.2
+    prettier: ^1.17.0
+    qs: ^6.9.4
+    react: ^16.13.1
+    react-confetti: ^6.0.0
+    react-custom-scrollbars: ^4.2.1
+    react-device-detect: ^1.6.2
+    react-dom: ^16.13.1
+    react-feather: ^2.0.8
+    react-ga: ^2.5.7
+    react-html-parser: ^2.0.2
+    react-i18next: ^10.7.0
+    react-markdown: ^8.0.0
+    react-popper: ^2.2.3
+    react-portal: ^4.2.1
+    react-query: ^3.34.16
+    react-redux: ^7.2.0
+    react-router-dom: ^5.0.0
+    react-scripts: ^3.4.1
+    react-slick: ^0.28.1
+    react-spring: ^8.0.27
+    react-use: ^15.3.8
+    react-use-gesture: ^6.0.14
+    react-virtualized-auto-sizer: ^1.0.2
+    react-window: ^1.8.5
+    rebass: ^4.0.7
+    recharts: ^2.1.6
+    redux-localstorage-simple: ^2.3.1
+    remark-gfm: ^3.0.1
+    serve: ^11.3.0
+    slick-carousel: ^1.8.1
+    start-server-and-test: ^1.11.0
+    styled-components: ^4.2.0
+    typescript: ^3.8.3
+    use-count-up: ^2.2.5
+    wcag-contrast: ^3.0.0
+  languageName: unknown
+  linkType: soft
+
+"@hollis/sdk@npm:2.3.0, @hollis/sdk@npm:^2.2.0":
+  version: 2.3.0
+  resolution: "@hollis/sdk@npm:2.3.0"
+  dependencies:
+    "@hollis/exchange-contracts": ^2.5.0
+    big.js: ^5.2.2
+    decimal.js-light: ^2.5.0
+    jsbi: ^3.1.1
+    tiny-invariant: ^1.1.0
+    tiny-warning: ^1.0.3
+    toformat: ^2.0.0
+  peerDependencies:
+    "@ethersproject/address": ^5.0.0-beta
+    "@ethersproject/contracts": ^5.0.0-beta
+    "@ethersproject/networks": ^5.0.0-beta
+    "@ethersproject/providers": ^5.0.0-beta
+    "@ethersproject/solidity": ^5.0.0-beta
+  checksum: e1221298934eafb513597e8ae7aa74f46c8941361e1508a5573e52b0ff9208659d3d8a0c781daab03dafb569be25c8407b06b990f708bf09b6ffcdf750f7e511
   languageName: node
   linkType: hard
 
@@ -2856,6 +3055,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nomiclabs/hardhat-etherscan@npm:^3.0.0":
+  version: 3.0.3
+  resolution: "@nomiclabs/hardhat-etherscan@npm:3.0.3"
+  dependencies:
+    "@ethersproject/abi": ^5.1.2
+    "@ethersproject/address": ^5.0.2
+    cbor: ^5.0.2
+    debug: ^4.1.1
+    fs-extra: ^7.0.1
+    semver: ^6.3.0
+    undici: ^4.14.1
+  peerDependencies:
+    hardhat: ^2.0.4
+  checksum: 6ce0856ad989c4cff5c90f7673d80fb7778ac1941db2bdf0998afca31c2439ed2e840fbad123a6f5958768243179af33a56f7b45919a598c8361b9a7cfdbaea6
+  languageName: node
+  linkType: hard
+
 "@npmcli/fs@npm:^2.1.0":
   version: 2.1.0
   resolution: "@npmcli/fs@npm:2.1.0"
@@ -2893,7 +3109,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pangolindex/exchange-contracts@npm:1.0.2, @pangolindex/exchange-contracts@npm:^1.0.1":
+"@pangolindex/exchange-contracts@npm:^1.0.1":
   version: 1.0.2
   resolution: "@pangolindex/exchange-contracts@npm:1.0.2"
   dependencies:
@@ -2911,149 +3127,6 @@ __metadata:
     csv-batch: ^2.0.2
     openzeppelin-solidity: ^3.4.0
   checksum: 524755812e1a1b94a23cbf0405328cff90168cb863043f8b8b9993c2a3e77b1fc7f14f7ea203586f200b118f5e000f8417bc6d945a202e2521f25aa5f1ded2f9
-  languageName: node
-  linkType: hard
-
-"@pangolindex/interface@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@pangolindex/interface@workspace:."
-  dependencies:
-    "@ethersproject/experimental": ^5.0.1
-    "@gelatonetwork/limit-orders-react": ^2.4.0
-    "@gnosis.pm/safe-apps-web3-react": ^0.6.7
-    "@metamask/jazzicon": ^2.0.0
-    "@pangolindex/components": 2.0.4
-    "@pangolindex/exchange-contracts": 1.0.2
-    "@pangolindex/governance": 1.2.0
-    "@pangolindex/sdk": 2.0.0-rc.6
-    "@pangolindex/token-lists": ^1.0.1
-    "@pangolindex/web3-react-injected-connector": ^1.0.0
-    "@popperjs/core": ^2.4.4
-    "@reach/dialog": ^0.10.3
-    "@reach/portal": ^0.10.3
-    "@reduxjs/toolkit": ^1.7.2
-    "@sentry/react": ^6.17.4
-    "@sentry/tracing": ^6.17.4
-    "@types/crypto-js": ^4.0.2
-    "@types/jest": ^25.2.1
-    "@types/lodash.flatmap": ^4.5.6
-    "@types/luxon": ^1.24.4
-    "@types/multicodec": ^1.0.0
-    "@types/node": ^13.13.5
-    "@types/numeral": ^2.0.2
-    "@types/qs": ^6.9.2
-    "@types/react": ^16.9.34
-    "@types/react-custom-scrollbars": ^4.0.9
-    "@types/react-dom": ^16.9.7
-    "@types/react-html-parser": ^2.0.2
-    "@types/react-portal": ^4.0.4
-    "@types/react-redux": ^7.1.8
-    "@types/react-router-dom": ^5.0.0
-    "@types/react-slick": ^0.23.7
-    "@types/react-virtualized-auto-sizer": ^1.0.0
-    "@types/react-window": ^1.8.2
-    "@types/rebass": ^4.0.5
-    "@types/styled-components": ^5.1.0
-    "@types/testing-library__cypress": ^5.0.5
-    "@types/wcag-contrast": ^3.0.0
-    "@typescript-eslint/eslint-plugin": ^2.31.0
-    "@typescript-eslint/parser": ^2.31.0
-    "@web3-react/core": 6.0.9
-    "@web3-react/fortmatic-connector": ^6.0.9
-    "@web3-react/portis-connector": 6.0.9
-    "@web3-react/walletconnect-connector": 6.1.1
-    "@web3-react/walletlink-connector": 6.2.11
-    ajv: ^6.12.3
-    apollo-cache-inmemory: ^1.6.6
-    apollo-client: ^2.6.10
-    apollo-link-http: ^1.5.17
-    axios: ^0.26.0
-    babel-plugin-styled-components: ^2.0.2
-    cids: ^1.0.0
-    copy-to-clipboard: ^3.2.0
-    cross-env: ^7.0.2
-    crypto-js: ^4.0.0
-    cypress: ^4.11.0
-    dayjs: ^1.10.7
-    eslint: ^6.8.0
-    eslint-config-prettier: ^6.11.0
-    eslint-plugin-prettier: ^3.1.3
-    eslint-plugin-react: ^7.19.0
-    eslint-plugin-react-hooks: ^4.0.0
-    ethereum-blockies-base64: ^1.0.2
-    ethers: ^5.0.7
-    graphql: ^15.5.0
-    graphql-tag: ^2.11.0
-    husky: ^7.0.0
-    i18next: ^20.3.4
-    i18next-browser-languagedetector: ^3.0.1
-    i18next-xhr-backend: ^2.0.1
-    inter-ui: ^3.13.1
-    lightweight-charts: ^3.7.0
-    lint-staged: ^12.3.4
-    lodash.flatmap: ^4.5.0
-    luxon: ^1.25.0
-    multicodec: ^2.0.0
-    multihashes: ^3.0.1
-    node-vibrant: ^3.1.5
-    numeral: ^2.0.6
-    polished: ^3.3.2
-    prettier: ^1.17.0
-    qs: ^6.9.4
-    react: ^16.13.1
-    react-confetti: ^6.0.0
-    react-custom-scrollbars: ^4.2.1
-    react-device-detect: ^1.6.2
-    react-dom: ^16.13.1
-    react-feather: ^2.0.8
-    react-ga: ^2.5.7
-    react-html-parser: ^2.0.2
-    react-i18next: ^10.7.0
-    react-markdown: ^8.0.0
-    react-popper: ^2.2.3
-    react-portal: ^4.2.1
-    react-query: ^3.34.16
-    react-redux: ^7.2.0
-    react-router-dom: ^5.0.0
-    react-scripts: ^3.4.1
-    react-slick: ^0.28.1
-    react-spring: ^8.0.27
-    react-use: ^15.3.8
-    react-use-gesture: ^6.0.14
-    react-virtualized-auto-sizer: ^1.0.2
-    react-window: ^1.8.5
-    rebass: ^4.0.7
-    recharts: ^2.1.6
-    redux-localstorage-simple: ^2.3.1
-    remark-gfm: ^3.0.1
-    serve: ^11.3.0
-    slick-carousel: ^1.8.1
-    start-server-and-test: ^1.11.0
-    styled-components: ^4.2.0
-    typescript: ^3.8.3
-    use-count-up: ^2.2.5
-    wcag-contrast: ^3.0.0
-  languageName: unknown
-  linkType: soft
-
-"@pangolindex/sdk@npm:2.0.0-rc.6":
-  version: 2.0.0-rc.6
-  resolution: "@pangolindex/sdk@npm:2.0.0-rc.6"
-  dependencies:
-    "@pangolindex/exchange-contracts": ^1.0.1
-    big.js: ^5.2.2
-    decimal.js-light: ^2.5.0
-    jsbi: ^3.1.1
-    tiny-invariant: ^1.1.0
-    tiny-warning: ^1.0.3
-    toformat: ^2.0.0
-  peerDependencies:
-    "@ethersproject/address": ^5.0.0-beta
-    "@ethersproject/contracts": ^5.0.0-beta
-    "@ethersproject/networks": ^5.0.0-beta
-    "@ethersproject/providers": ^5.0.0-beta
-    "@ethersproject/solidity": ^5.0.0-beta
-  checksum: 003d4fd377f000026a589894b13e641a00ba7ecbab944fa0ac2c5582ace1a1dbcfafa690b49e2b4e4e01b3d8b34528b102f710c0fbf8e369b8fe7dd28328a007
   languageName: node
   linkType: hard
 
@@ -3710,6 +3783,15 @@ __metadata:
   dependencies:
     "@types/node": "*"
   checksum: 7f66f2c7b7b9303b3205a57184261974b114495736b77853af5b18d857c0b33e82ce7146911e86e87a87837de8acae28986716fd381ac7c301fd6e8d8b6c811f
+  languageName: node
+  linkType: hard
+
+"@types/bn.js@npm:^5.1.0":
+  version: 5.1.0
+  resolution: "@types/bn.js@npm:5.1.0"
+  dependencies:
+    "@types/node": "*"
+  checksum: 1dc1cbbd7a1e8bf3614752e9602f558762a901031f499f3055828b5e3e2bba16e5b88c27b3c4152ad795248fbe4086c731a5c4b0f29bb243f1875beeeabee59c
   languageName: node
   linkType: hard
 
@@ -6872,6 +6954,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"bignumber.js@npm:^9.0.1":
+  version: 9.0.2
+  resolution: "bignumber.js@npm:9.0.2"
+  checksum: 8637b71d0a99104b20413c47578953970006fec6b4df796b9dcfd9835ea9c402ea0e727eba9a5ca9f9a393c1d88b6168c5bbe0887598b708d4f8b4870ad62e1f
+  languageName: node
+  linkType: hard
+
 "binary-extensions@npm:^1.0.0":
   version: 1.13.1
   resolution: "binary-extensions@npm:1.13.1"
@@ -6953,7 +7042,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bn.js@npm:^5.0.0, bn.js@npm:^5.1.1, bn.js@npm:^5.2.0":
+"bn.js@npm:^5.0.0, bn.js@npm:^5.1.1, bn.js@npm:^5.1.2, bn.js@npm:^5.2.0":
   version: 5.2.0
   resolution: "bn.js@npm:5.2.0"
   checksum: 6117170393200f68b35a061ecbf55d01dd989302e7b3c798a3012354fa638d124f0b2f79e63f77be5556be80322a09c40339eda6413ba7468524c0b6d4b4cb7a
@@ -7590,6 +7679,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"cbor@npm:^5.0.2":
+  version: 5.2.0
+  resolution: "cbor@npm:5.2.0"
+  dependencies:
+    bignumber.js: ^9.0.1
+    nofilter: ^1.0.4
+  checksum: b3c39dae64370f361526dbec88f51d0f1b47027224cdd21dbd64c228f0fe7eaa945932d349ec5324068a6c6dcdbb1e3b46242852524fd53c526d14cb60514bdc
+  languageName: node
+  linkType: hard
+
 "ccount@npm:^2.0.0":
   version: 2.0.1
   resolution: "ccount@npm:2.0.1"
@@ -7649,6 +7748,13 @@ __metadata:
     ansi-styles: ^4.1.0
     supports-color: ^7.1.0
   checksum: fe75c9d5c76a7a98d45495b91b2172fa3b7a09e0cc9370e5c8feb1c567b85c4288e2b3fded7cfdd7359ac28d6b3844feb8b82b8686842e93d23c827c417e83fc
+  languageName: node
+  linkType: hard
+
+"chance@npm:^1.1.8":
+  version: 1.1.8
+  resolution: "chance@npm:1.1.8"
+  checksum: e733f51e1094d7b0343a9e79f38599086442e6284fc2789cf9e072c71a0070874a1b340f9fffe4e66260899733f768cf113434be466ecb0016e3afcb60add3ee
   languageName: node
   linkType: hard
 
@@ -9770,6 +9876,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dotenv@npm:^14.2.0":
+  version: 14.3.2
+  resolution: "dotenv@npm:14.3.2"
+  checksum: 86c06758915d6facc35275f4a7fafc16705b6f3b44befaa8abca91367991efc8ff8db5437d3cc14778231d19fb97610fe82d60f8a53ba723cdb69fe4171439aa
+  languageName: node
+  linkType: hard
+
 "dotignore@npm:~0.1.2":
   version: 0.1.2
   resolution: "dotignore@npm:0.1.2"
@@ -10982,6 +11095,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ethereumjs-util@npm:^7.1.3":
+  version: 7.1.4
+  resolution: "ethereumjs-util@npm:7.1.4"
+  dependencies:
+    "@types/bn.js": ^5.1.0
+    bn.js: ^5.1.2
+    create-hash: ^1.1.2
+    ethereum-cryptography: ^0.1.3
+    rlp: ^2.2.4
+  checksum: ccfd9208bfe9205af124a9138c5a90db46cd2fcacf4b80f17f67915381c03253aa2fb90ead9e0b53d9a6fcfeed4310e5dfa8dc516ca2846d16baf81d605cd8c2
+  languageName: node
+  linkType: hard
+
 "ethereumjs-vm@npm:^2.1.0, ethereumjs-vm@npm:^2.3.4, ethereumjs-vm@npm:^2.6.0":
   version: 2.6.0
   resolution: "ethereumjs-vm@npm:2.6.0"
@@ -11975,7 +12101,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fs-extra@npm:^7.0.0":
+"fs-extra@npm:^7.0.0, fs-extra@npm:^7.0.1":
   version: 7.0.1
   resolution: "fs-extra@npm:7.0.1"
   dependencies:
@@ -17221,6 +17347,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"nofilter@npm:^1.0.4":
+  version: 1.0.4
+  resolution: "nofilter@npm:1.0.4"
+  checksum: 54d864f745de5c3312994e880cf2d4f55e34830d6adc8275dce3731507ca380d21040336e4a277a4901551c07f04c452fbeffd57fad1dc8f68a2943eaf894a04
+  languageName: node
+  linkType: hard
+
 "nopt@npm:^5.0.0":
   version: 5.0.0
   resolution: "nopt@npm:5.0.0"
@@ -21183,7 +21316,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rlp@npm:^2.0.0, rlp@npm:^2.2.3":
+"rlp@npm:^2.0.0, rlp@npm:^2.2.3, rlp@npm:^2.2.4":
   version: 2.2.7
   resolution: "rlp@npm:2.2.7"
   dependencies:
@@ -23769,6 +23902,13 @@ __metadata:
     has-symbols: ^1.0.2
     which-boxed-primitive: ^1.0.2
   checksum: 89d950e18fb45672bc6b3c961f1e72c07beb9640c7ceed847b571ba6f7d2af570ae1a2584cfee268b9d9ea1e3293f7e33e0bc29eaeb9f8e8a0bab057ff9e6bba
+  languageName: node
+  linkType: hard
+
+"undici@npm:^4.14.1":
+  version: 4.16.0
+  resolution: "undici@npm:4.16.0"
+  checksum: 5e88c2b3381085e25ed1d1a308610ac7ee985f478ac705af7a8e03213536e10f73ef8dd8d85e6ed38948d1883fa0ae935e04357c317b0f5d3d3c0211d0c8c393
   languageName: node
   linkType: hard
 
