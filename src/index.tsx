@@ -22,7 +22,7 @@ import getLibrary from './utils/getLibrary'
 import { ThemeContext } from 'styled-components'
 import { useIsBetaUI } from './hooks/useLocation'
 import { useActiveWeb3React } from './hooks'
-import Package from '../package.json'
+
 
 const Web3ProviderNetwork = createWeb3ReactRoot(NetworkContextName)
 
