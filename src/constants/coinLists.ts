@@ -97,7 +97,7 @@ import {
   OG,
   wWAGMI
 } from 'src/constants/tokens'
-import { WAVAX } from '@pangolindex/sdk'
+import { WAVAX } from '@hollis/sdk'
 
 export const COIN_LISTS = [
   WAVAX,

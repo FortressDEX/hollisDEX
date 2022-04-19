@@ -1,4 +1,4 @@
-import { Currency } from '@pangolindex/sdk'
+import { Currency } from '@hollis/sdk'
 import React from 'react'
 import { useChainId } from 'src/hooks'
 import { LogoSize } from 'src/constants'

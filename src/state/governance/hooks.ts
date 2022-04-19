@@ -1,5 +1,5 @@
 import { PNG } from 'src/constants/tokens'
-import { TokenAmount, JSBI } from '@pangolindex/sdk'
+import { TokenAmount, JSBI } from '@hollis/sdk'
 import { isAddress } from 'ethers/lib/utils'
 import { useGovernanceContract, usePngContract } from 'src/hooks/useContract'
 import { useSingleCallResult, useSingleContractMultipleData } from '../multicall/hooks'

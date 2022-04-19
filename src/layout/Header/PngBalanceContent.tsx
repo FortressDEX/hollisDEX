@@ -1,4 +1,4 @@
-import { TokenAmount, WAVAX, JSBI, ChainId } from '@pangolindex/sdk'
+import { TokenAmount, WAVAX, JSBI, ChainId } from '@hollis/sdk'
 import React, { useMemo, useState } from 'react'
 import { X } from 'react-feather'
 import styled from 'styled-components'

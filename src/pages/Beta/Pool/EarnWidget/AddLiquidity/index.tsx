@@ -1,5 +1,5 @@
 import React, { useContext, useCallback, useState } from 'react'
-import { Currency, CAVAX, TokenAmount } from '@pangolindex/sdk'
+import { Currency, CAVAX, TokenAmount } from '@hollis/sdk'
 import { AddWrapper, InputText, StyledBalanceMax, ArrowWrapper, LightCard, InputWrapper, Buttons } from './styleds'
 import { useTranslation } from 'react-i18next'
 import { Box, Button, Text } from '@pangolindex/components'

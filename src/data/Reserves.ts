@@ -1,6 +1,6 @@
-import { TokenAmount, Pair, Currency } from '@pangolindex/sdk'
+import { TokenAmount, Pair, Currency } from '@hollis/sdk'
 import { useMemo } from 'react'
-import IPangolinPair from '@pangolindex/exchange-contracts/artifacts/contracts/pangolin-core/interfaces/IPangolinPair.sol/IPangolinPair.json'
+import IPangolinPair from '@hollis/exchange-contracts/artifacts/contracts/pangolin-core/interfaces/IPangolinPair.sol/IPangolinPair.json'
 import { Interface } from '@ethersproject/abi'
 import { useChainId } from '../hooks'
 

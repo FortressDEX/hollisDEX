@@ -1,6 +1,6 @@
 import React from 'react'
 import { Text, Box } from '@pangolindex/components'
-import { Currency, TokenAmount } from '@pangolindex/sdk'
+import { Currency, TokenAmount } from '@hollis/sdk'
 import { StateContainer } from './styleds'
 import numeral from 'numeral'
 import Stat from 'src/components/Stat'

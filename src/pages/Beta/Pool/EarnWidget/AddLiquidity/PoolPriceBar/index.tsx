@@ -1,5 +1,5 @@
 import React from 'react'
-import { Currency, Percent, Price, CurrencyAmount } from '@pangolindex/sdk'
+import { Currency, Percent, Price, CurrencyAmount } from '@hollis/sdk'
 import { Box } from '@pangolindex/components'
 import Stat from 'src/components/Stat'
 import { Root, GridContainer } from './styled'

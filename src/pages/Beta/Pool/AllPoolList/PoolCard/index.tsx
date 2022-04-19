@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Fraction } from '@pangolindex/sdk'
+import { Fraction } from '@hollis/sdk'
 import {
   Panel,
   Divider,
