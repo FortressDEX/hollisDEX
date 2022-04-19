@@ -8,7 +8,7 @@ export interface CHAIN {
 
 export enum ChainsId {
   All = 0,
-  AVAX = 43114,
+  MATIC = 43114,
   FUJI = 43113,
   ETH = 1,
   BSC = 56,
@@ -36,9 +36,9 @@ export const CHAINS = {
     symbol: 'All',
     logo: Logo
   },
-  [ChainsId.AVAX]: {
+  [ChainsId.MATIC]: {
     name: 'Avalanche',
-    symbol: 'AVAX',
+    symbol: 'MATIC',
     logo: 'https://static.debank.com/image/chain/logo_url/avax/4d1649e8a0c7dec9de3491b81807d402.png',
     tracked_by_debank: true,
     supported_by_gelato: true,
@@ -48,7 +48,7 @@ export const CHAINS = {
   },
   [ChainsId.FUJI]: {
     name: 'Avalanche-fuji',
-    symbol: 'AVAX',
+    symbol: 'MATIC',
     logo: 'https://static.debank.com/image/chain/logo_url/avax/4d1649e8a0c7dec9de3491b81807d402.png',
     tracked_by_debank: false,
     supported_by_gelato: true,

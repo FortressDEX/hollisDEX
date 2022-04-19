@@ -20,7 +20,7 @@ import { useTranslation } from 'react-i18next'
 import { useChainId } from 'src/hooks'
 
 function currencyKey(currency: Currency, chainId: ChainId): string {
-  return currency instanceof Token ? currency.address : currency === CAVAX[chainId] ? 'AVAX' : ''
+  return currency instanceof Token ? currency.address : currency === CAVAX[chainId] ? 'MATIC' : ''
 }
 
 const StyledBalanceText = styled(Text)`

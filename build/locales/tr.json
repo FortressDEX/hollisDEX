@@ -70,7 +70,7 @@
     "deposit": "Yatır",
     "poolRate": "Havuzun getirisi",
     "currentReward": "Mevcut ödül",
-    "pngPerAvax": "PNG (AVAX başına, haftalık)",
+    "pngPerAvax": "PNG (MATIC başına, haftalık)",
     "rewardPerWeek": "{{ symbol }} (haftalık)",
     "earnUpTo": "Şu kadara kadar kazanın (yıllık)",
     "yourRate": "Getiriniz",
@@ -462,12 +462,12 @@
     "seeLess": "Daha Az Gör"
   },
   "buyPage": {
-    "buyAvaxInfo": "Partnerimiz Wyre aracılığıyla AVAX satın alın.",
+    "buyAvaxInfo": "Partnerimiz Wyre aracılığıyla MATIC satın alın.",
     "privacyInfo": "Pangolin, satın alma geçmişinizi ya da şahsi bilgilerinizi depolamaz.",
     "firstName": "Ad",
     "lastName": "Soyad",
     "email": "E-mail",
-    "buyAvax": "AVAX Satın Al"
+    "buyAvax": "MATIC Satın Al"
   },
   "votePage": {
     "unlockVotes": "Oyların Kilidini Kaldır",

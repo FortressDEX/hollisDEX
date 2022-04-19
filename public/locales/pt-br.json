@@ -70,7 +70,7 @@
     "deposit": "Deposite",
     "poolRate": "Ganhos da pool",
     "currentReward": "Recompensa atual",
-    "pngPerAvax": "PNG / Semana por AVAX",
+    "pngPerAvax": "PNG / Semana por MATIC",
     "rewardPerWeek": "{{ symbol }} / Semana",
     "earnUpTo": "Ganhe até (anual)",
     "yourRate": "Sua taxa",
@@ -461,12 +461,12 @@
     "seeLess": "Ver menos"
   },
   "buyPage": {
-    "buyAvaxInfo": "Compre AVAX com moeda fiduciária do nosso parceiro Wyre.",
+    "buyAvaxInfo": "Compre MATIC com moeda fiduciária do nosso parceiro Wyre.",
     "privacyInfo": "A Pangolin não armazena seu histórico de compras ou dados pessoais.",
     "firstName": "Nome",
     "lastName": "Apelido",
     "email": "Email",
-    "buyAvax": "Compre AVAX"
+    "buyAvax": "Compre MATIC"
   },
   "votePage": {
     "unlockVotes": "Desbloquear votos",

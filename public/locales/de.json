@@ -70,7 +70,7 @@
     "deposit": "Einzahlen",
     "poolRate": "Pool-Rate",
     "currentReward": "Momentane Vergütung",
-    "pngPerAvax": "PNG / Woche pro AVAX",
+    "pngPerAvax": "PNG / Woche pro MATIC",
     "rewardPerWeek": "{{ symbol }} / Woche",
     "earnUpTo": "Verdiene jährlich bis zu",
     "yourRate": "Deine Rate",
@@ -462,12 +462,12 @@
     "seeLess": "Siehe Weniger"
   },
   "buyPage": {
-    "buyAvaxInfo": "Kaufen Sie AVAX mit Fiatgeld von unserem Partner Wyre.",
+    "buyAvaxInfo": "Kaufen Sie MATIC mit Fiatgeld von unserem Partner Wyre.",
     "privacyInfo": "Pangolin speichert keine Kaufhistorie und persönliche Daten.",
     "firstName": "Vorname",
     "lastName": "Nachname",
     "email": "E-Mail-Adresse",
-    "buyAvax": "Kaufen Sie AVAX"
+    "buyAvax": "Kaufen Sie MATIC"
   },
   "votePage": {
     "unlockVotes": "Stimmen freischalten",

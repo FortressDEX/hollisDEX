@@ -166,7 +166,7 @@ export function useTokens(tokensAddress: string[] = []): Array<Token | undefined
 
 export function useCurrency(currencyId: string | undefined): Currency | null | undefined {
   const chainId = useChainId()
-  const isAVAX = currencyId?.toUpperCase() === 'AVAX'
+  const isAVAX = currencyId?.toUpperCase() === 'MATIC'
   const token = useToken(isAVAX ? undefined : currencyId)
   return isAVAX ? chainId && CAVAX[chainId] : token
 }
@@ -176,7 +176,7 @@ export function useCoinGeckoTokenData(coin: Token) {
 
   useEffect(() => {
     const getCoinData = async () => {
-      const chain = coin.chainId === 43113 ? CHAINS[ChainsId.AVAX] : CHAINS[coin.chainId]
+      const chain = coin.chainId === 43113 ? CHAINS[ChainsId.MATIC] : CHAINS[coin.chainId]
 
       const response = await fetch(
         `https://api.coingecko.com/api/v3/coins/${chain.coingecko_id}/contract/${coin.address.toLowerCase()}`

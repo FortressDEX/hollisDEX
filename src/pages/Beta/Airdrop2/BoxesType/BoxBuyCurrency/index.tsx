@@ -53,7 +53,7 @@ export const BoxBuyCurrency: React.FC<IBuy> = ({ buyFTM }) => {
             selectAmount(0.1)
           }}
         >
-          <span style={{ whiteSpace: 'nowrap', color: '#000', fontSize: '15px' }}>0.1 AVAX</span>
+          <span style={{ whiteSpace: 'nowrap', color: '#000', fontSize: '15px' }}>0.1 MATIC</span>
         </Button>
         <Button
           variant={button2}
@@ -64,7 +64,7 @@ export const BoxBuyCurrency: React.FC<IBuy> = ({ buyFTM }) => {
             selectAmount(0.5)
           }}
         >
-          <span style={{ whiteSpace: 'nowrap', color: '#000', fontSize: '15px' }}>0.5 AVAX</span>
+          <span style={{ whiteSpace: 'nowrap', color: '#000', fontSize: '15px' }}>0.5 MATIC</span>
         </Button>
         <Button
           variant={button3}
@@ -75,7 +75,7 @@ export const BoxBuyCurrency: React.FC<IBuy> = ({ buyFTM }) => {
             selectAmount(1)
           }}
         >
-          <span style={{ whiteSpace: 'nowrap', color: '#000', fontSize: '15px' }}>1 AVAX</span>
+          <span style={{ whiteSpace: 'nowrap', color: '#000', fontSize: '15px' }}>1 MATIC</span>
         </Button>
       </BoxWrapper>
       <Button variant="primary" color="white" height="46px" onClick={buyFTM}>

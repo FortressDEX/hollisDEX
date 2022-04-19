@@ -71,7 +71,7 @@ export default function PngBalanceContent({ setShowPngBalanceModal }: { setShowP
 
   const totalSupply: TokenAmount | undefined = useTotalSupply(png)
 
-  // Determine PNG price in AVAX
+  // Determine PNG price in MATIC
   const wavax = WAVAX[chainId ? chainId : 137]
   const [, avaxPngTokenPair] = usePair(wavax, png)
   const oneToken = JSBI.BigInt(1000000000000000000)
@@ -143,7 +143,7 @@ export default function PngBalanceContent({ setShowPngBalanceModal }: { setShowP
           <AutoColumn gap="md">
             <RowBetween>
               <TYPE.white color="white">{t('header.pngPrice')}</TYPE.white>
-              <TYPE.white color="white">{pngPrice?.toFixed(5) ?? '-'} AVAX</TYPE.white>
+              <TYPE.white color="white">{pngPrice?.toFixed(5) ?? '-'} MATIC</TYPE.white>
             </RowBetween>
             <RowBetween>
               <TYPE.white color="white">{t('header.pngCirculation')}</TYPE.white>

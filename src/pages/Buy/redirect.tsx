@@ -6,7 +6,7 @@ export const redirectToWyre = async (data: any): Promise<boolean> => {
   const body = {
     ...data,
     referrerAccountId: WYRE_ID,
-    destCurrency: 'AVAX',
+    destCurrency: 'MATIC',
     redirectUrl: WYRE_CALLBACK_URL,
     hideTrackBtn: true,
     country: getCountry()

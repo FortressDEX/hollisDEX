@@ -38,8 +38,8 @@ export default function useWrapCallback(
   const addTransaction = useTransactionAdder()
 
   const NETWORK_CURRENCY: { [chainId in ChainId]?: string } = {
-    [ChainId.FUJI]: 'AVAX',
-    [ChainId.POLYGON]: 'AVAX',
+    [ChainId.FUJI]: 'MATIC',
+    [ChainId.POLYGON]: 'MATIC',
     [ChainId.WAGMI]: 'WGM'
   }
 

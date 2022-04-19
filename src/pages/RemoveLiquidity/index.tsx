@@ -355,7 +355,7 @@ export default function RemoveLiquidity({
   }
 
   const NETWORK_CURRENCY: { [chainId in ChainId]?: string } = {
-    [ChainId.FUJI]: 'AVAX',
+    [ChainId.FUJI]: 'MATIC',
     [ChainId.POLYGON]: 'MATIC',
     [ChainId.WAGMI]: 'WGM'
   }
@@ -609,8 +609,8 @@ export default function RemoveLiquidity({
                         ) : oneCurrencyIsWAVAX ? (
                           <StyledInternalLink
                             to={`/remove/${
-                              currencyA && currencyEquals(currencyA, WAVAX[chainId]) ? 'AVAX' : currencyIdA
-                            }/${currencyB && currencyEquals(currencyB, WAVAX[chainId]) ? 'AVAX' : currencyIdB}`}
+                              currencyA && currencyEquals(currencyA, WAVAX[chainId]) ? 'MATIC' : currencyIdA
+                            }/${currencyB && currencyEquals(currencyB, WAVAX[chainId]) ? 'MATIC' : currencyIdB}`}
                           >
                             {t('removeLiquidity.receiveAvax', { symbol: NETWORK_CURRENCY[chainId] })}
                           </StyledInternalLink>

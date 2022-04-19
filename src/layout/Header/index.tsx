@@ -47,7 +47,7 @@ const NETWORK_LABELS: { [chainId in ChainId]?: string } = {
 }
 
 const NETWORK_CURRENCY: { [chainId in ChainId]?: string } = {
-  [ChainId.FUJI]: 'AVAX',
+  [ChainId.FUJI]: 'MATIC',
   [ChainId.POLYGON]: 'MATIC',
   [ChainId.WAGMI]: 'WGM'
 }

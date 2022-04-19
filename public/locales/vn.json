@@ -70,7 +70,7 @@
     "deposit": "Gửi",
     "poolRate": "Tỷ suất bể",
     "currentReward": "Phần thưởng hiện tại",
-    "pngPerAvax": "PNG/tuần trên mỗi AVAX",
+    "pngPerAvax": "PNG/tuần trên mỗi MATIC",
     "rewardPerWeek": "{{ symbol }} / Tuần",
     "earnUpTo": "Lợi nhuận hàng năm lên đến",
     "yourRate": "Tỷ lệ của bạn",
@@ -462,12 +462,12 @@
     "seeLess": "Thấy ít"
   },
   "buyPage": {
-    "buyAvaxInfo": "Mua AVAX bằng fiat từ đối tác Wyre của chúng tôi.",
+    "buyAvaxInfo": "Mua MATIC bằng fiat từ đối tác Wyre của chúng tôi.",
     "privacyInfo": "Pangolin không lưu trữ lịch sử mua hàng của bạn hoặc bất kỳ dữ liệu cá nhân nào.",
     "firstName": "Tên đầu",
     "lastName": "Tên cuối",
     "email": "Thư điện tử",
-    "buyAvax": "Mua AVAX"
+    "buyAvax": "Mua MATIC"
   },
   "votePage": {
     "unlockVotes": "Mở khóa phiếu bầu",

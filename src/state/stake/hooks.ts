@@ -107,7 +107,7 @@ export interface DoubleSideStakingInfo extends StakingInfoBase {
   tokens: [Token, Token]
   // the pool weight
   multiplier: JSBI
-  // total staked AVAX in the pool
+  // total staked MATIC in the pool
   totalStakedInWavax: TokenAmount
   totalStakedInUsd: TokenAmount
   rewardTokensAddress?: Array<string>
@@ -186,7 +186,7 @@ const calculateTotalStakedAmountInAvax = function(
   chainId: ChainId
 ): TokenAmount {
   if (JSBI.GT(amountAvailable, 0)) {
-    // take the total amount of LP tokens staked, multiply by AVAX value of all LP tokens, divide by all LP tokens
+    // take the total amount of LP tokens staked, multiply by MATIC value of all LP tokens, divide by all LP tokens
     return new TokenAmount(
       WAVAX[chainId],
       JSBI.divide(
@@ -948,7 +948,7 @@ export const useMinichefStakingInfos = (version = 2, pairToFilterBy?: Pair | nul
         const token1 = pair?.token1
 
         const tokens = [token0, token1].sort(({ address: addressA }, { address: addressB }) => {
-          // Sort AVAX last
+          // Sort MATIC last
           if (addressA === WAVAX[ChainId.POLYGON].address) return 1
           else if (addressB === WAVAX[ChainId.POLYGON].address) return -1
           // Sort PNG first

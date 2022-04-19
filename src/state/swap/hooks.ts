@@ -49,7 +49,7 @@ export function useSwapActionHandlers(
         selectCurrency({
           field,
           currencyId:
-            currency instanceof Token ? currency.address : chainId && currency === CAVAX[chainId] ? 'AVAX' : ''
+            currency instanceof Token ? currency.address : chainId && currency === CAVAX[chainId] ? 'MATIC' : ''
         })
       )
     },
@@ -238,10 +238,10 @@ function parseCurrencyFromURLParameter(urlParam: any): string {
   if (typeof urlParam === 'string') {
     const valid = isAddress(urlParam)
     if (valid) return valid
-    if (urlParam.toUpperCase() === 'AVAX') return 'AVAX'
-    if (valid === false) return 'AVAX'
+    if (urlParam.toUpperCase() === 'MATIC') return 'MATIC'
+    if (valid === false) return 'MATIC'
   }
-  return 'AVAX' ?? ''
+  return 'MATIC' ?? ''
 }
 
 function parseTokenAmountURLParameter(urlParam: any): string {

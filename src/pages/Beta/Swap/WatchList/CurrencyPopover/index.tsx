@@ -23,7 +23,7 @@ interface Props {
 }
 
 const currencyKey = (currency: Currency, chainId: ChainId): string => {
-  return currency instanceof Token ? currency.address : currency === CAVAX[chainId] ? 'AVAX' : ''
+  return currency instanceof Token ? currency.address : currency === CAVAX[chainId] ? 'MATIC' : ''
 }
 
 const CurrencyPopover: React.FC<Props> = ({

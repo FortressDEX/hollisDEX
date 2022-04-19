@@ -767,15 +767,15 @@ export const RAI: { [chainId in ChainId]: Token } = {
 }
 
 export const AAVAXB: { [chainId in ChainId]: Token } = {
-  [ChainId.FUJI]: new Token(ChainId.FUJI, ZERO_ADDRESS, 18, 'aAVAXb', 'Ankr AVAX Bond'),
+  [ChainId.FUJI]: new Token(ChainId.FUJI, ZERO_ADDRESS, 18, 'aAVAXb', 'Ankr MATIC Bond'),
   [ChainId.POLYGON]: new Token(
     ChainId.POLYGON,
     '0x6C6f910A79639dcC94b4feEF59Ff507c2E843929',
     18,
     'aAVAXb',
-    'Ankr AVAX Bond'
+    'Ankr MATIC Bond'
   ),
-  [ChainId.WAGMI]: new Token(ChainId.WAGMI, ZERO_ADDRESS, 18, 'aAVAXb', 'Ankr AVAX Bond')
+  [ChainId.WAGMI]: new Token(ChainId.WAGMI, ZERO_ADDRESS, 18, 'aAVAXb', 'Ankr MATIC Bond')
 }
 
 export const INSUR: { [chainId in ChainId]: Token } = {
@@ -1325,15 +1325,15 @@ export const ACRE: { [chainId in ChainId]: Token } = {
 }
 
 export const sAVAX: { [chainId in ChainId]: Token } = {
-  [ChainId.FUJI]: new Token(ChainId.FUJI, ZERO_ADDRESS, 18, 'sAVAX', 'Staked AVAX'),
+  [ChainId.FUJI]: new Token(ChainId.FUJI, ZERO_ADDRESS, 18, 'sAVAX', 'Staked MATIC'),
   [ChainId.POLYGON]: new Token(
     ChainId.POLYGON,
     '0x2b2C81e08f1Af8835a78Bb2A90AE924ACE0eA4bE',
     18,
     'sAVAX',
-    'Staked AVAX'
+    'Staked MATIC'
   ),
-  [ChainId.WAGMI]: new Token(ChainId.WAGMI, ZERO_ADDRESS, 18, 'sAVAX', 'Staked AVAX')
+  [ChainId.WAGMI]: new Token(ChainId.WAGMI, ZERO_ADDRESS, 18, 'sAVAX', 'Staked MATIC')
 }
 
 export const DEP: { [chainId in ChainId]: Token } = {

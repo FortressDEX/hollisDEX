@@ -71,7 +71,7 @@ export default function RemoveLiquidityModal({
   ])
 
   const NETWORK_CURRENCY: { [chainId in ChainId]?: string } = {
-    [ChainId.FUJI]: 'AVAX',
+    [ChainId.FUJI]: 'MATIC',
     [ChainId.POLYGON]: 'MATIC',
     [ChainId.WAGMI]: 'WGM'
   }
@@ -598,10 +598,10 @@ export default function RemoveLiquidityModal({
                         <LinkStyledButton
                           onClick={() => {
                             setCurrencyIdA(
-                              currencyA && currencyEquals(currencyA, WAVAX[chainId]) ? 'AVAX' : currencyIdA
+                              currencyA && currencyEquals(currencyA, WAVAX[chainId]) ? 'MATIC' : currencyIdA
                             )
                             setCurrencyIdB(
-                              currencyB && currencyEquals(currencyB, WAVAX[chainId]) ? 'AVAX' : currencyIdB
+                              currencyB && currencyEquals(currencyB, WAVAX[chainId]) ? 'MATIC' : currencyIdB
                             )
                           }}
                         >
